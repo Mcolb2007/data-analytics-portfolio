@@ -1,6 +1,6 @@
 # Data Analytics Portfolio — Maurice Colbert Jr.
 
-Five analytics projects built from my coursework in the **Global Career Accelerator**. Each
+Four analytics projects built from my coursework in the **Global Career Accelerator**. Each
 one starts from a business or research question, documents the reasoning behind every
 analytical decision, and ends in a recommendation with its limitations stated.
 
@@ -31,7 +31,6 @@ and **Intercultural Skills** (with UNESCO).
 | [02](02-olympic-medalists/) | **120 years of Olympic medalists** | What story is hiding in 39,783 medal records? | Exploratory analysis, missing-data auditing, data journalism |
 | [03](03-mars-weather/) | **Identifying a planet from its weather** | Which planet produced this rover telemetry? | Data forensics, orbital-cycle detection, multi-signal verification |
 | [04](04-dc-national-parks/) | **DC National Parks campaign targeting** | Where and when should the Park Service promote? | Concentration analysis, seasonality, data-quality triage |
-| [05](05-sql-analytics/) | **SQL analysis of the same datasets** | Can I reproduce the Python findings in SQL? | Schema design, joins, CTEs, window functions, `HAVING`, integrity checks |
 
 Every notebook is committed **with its outputs and charts already rendered**, so you can
 read the full analysis on GitHub without running anything.
@@ -74,10 +73,6 @@ is almost perfectly flat — so only one of the two demand streams is worth adve
 against. I also flagged rather than reported a site logging 30 visits for the entire year,
 because that is a broken counter, not a finding.
 
-**05 — SQL.** The same questions re-answered in SQL as a cross-check on the Python. All
-figures agree, which is the point: two independent implementations reaching the same
-numbers is evidence the numbers are right.
-
 ---
 
 ## What this portfolio demonstrates
@@ -88,9 +83,8 @@ in **[LEARNING-OUTCOMES.md](LEARNING-OUTCOMES.md)**. In brief:
 **Python for data analysis** — pandas for cleaning, reshaping, grouping, joining, and
 aggregating; matplotlib for charts built to be read rather than decorated.
 
-**SQL** — schema design with constraints that encode verified facts, joins, CTEs, window
-functions (`RANK`, `ROW_NUMBER`, `SUM OVER`), `GROUP BY`/`HAVING`, and integrity checks
-that run before conclusions are trusted.
+**SQL fundamentals** — filtering, aggregation, joins across tables, and grouped summaries,
+as represented by my Querying Data certification with Intel.
 
 **Analytical judgement** — choosing metrics that survive the shape of the data, testing a
 stated hypothesis instead of confirming it, controlling for seasonality, and separating a
@@ -141,8 +135,8 @@ per-project AI notes are specific.
 ## Running the projects
 
 ```bash
-git clone https://github.com/Mcolb2007/gca-data-analytics-portfolio.git
-cd gca-data-analytics-portfolio
+git clone https://github.com/Mcolb2007/data-analytics-portfolio.git
+cd data-analytics-portfolio
 
 python3 -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
@@ -162,16 +156,6 @@ Notebooks are authored as [jupytext](https://jupytext.readthedocs.io/) `_src.py`
 compiled to `.ipynb`, which keeps the version history readable — a code review shows the
 actual change instead of a wall of JSON.
 
-Run the SQL project:
-
-```bash
-cd 05-sql-analytics
-python build_database.py
-sqlite3 gca_portfolio.db < queries.sql
-```
-
----
-
 ## Repository layout
 
 ```
@@ -179,7 +163,6 @@ sqlite3 gca_portfolio.db < queries.sql
 ├── 02-olympic-medalists/           Exploratory analysis + data journalism pitch
 ├── 03-mars-weather/                Identifying a planet from telemetry
 ├── 04-dc-national-parks/           Campaign targeting and seasonality
-├── 05-sql-analytics/               Schema, queries, and results in SQL
 ├── communication/                  Intercultural communication coursework
 ├── assets/badges/                  Certification badges
 ├── LEARNING-OUTCOMES.md            Curriculum and learning outcomes

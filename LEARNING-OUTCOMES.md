@@ -37,7 +37,7 @@ split for The Recording Academy.
 Relational querying against large datasets: filtering, aggregation, joins across multiple
 tables, and grouped summaries.
 
-**→ Project [05](05-sql-analytics/)**
+**→ Represented by the certification badge and original course credential**
 
 </td>
 </tr>
@@ -81,7 +81,7 @@ The curriculum built up in eight steps, each adding a capability the next one de
 |---|---|---|
 | **1. The Power of Python** | `print()`, strings and indexing, numeric types, variables, f-strings | Formatted metric output throughout, e.g. `f"{desktop_share:.2f}%"` |
 | **2. Logic, Lists & Loops** | Booleans, comparison operators, built-in functions, list methods, slicing, `for` loops | Looping over site DataFrames to compute the same metrics for each (project 01) |
-| **3. Dictionaries & Conditional Logic** | Key-value structures, nested dictionaries, `if`/`elif`/`else` | Explicit CSV-to-column mapping in the database loader (project 05) |
+| **3. Dictionaries & Conditional Logic** | Key-value structures, nested dictionaries, `if`/`elif`/`else` | Organizing related values and controlling analysis paths based on data conditions |
 | **LevelUp: Logic with Loops and Lists** | List comprehensions, `while` loops, `zip()` | Building chart series and label pairs (projects 01, 02) |
 | **4. Intro to Pandas & Visualization** | `read_csv()`, DataFrames, `.head()`, `.loc[]`, `.info()`, `.describe()`, `.shape`, `.agg()`, plotting | The data-audit step that opens every project |
 | **5. Pandas & Filtering Data** | `.loc[]` vs `.iloc[]`, boolean filters, compound conditions, `.drop()`, `.rename()`, `.sort_values()` | Splitting pre/post-split traffic; the February–May seasonality control (project 01) |
@@ -107,13 +107,10 @@ read rather than decorated.
 
 ### SQL for relational analysis
 
-I can design a schema with constraints that encode what I have verified, then answer
-questions with joins, CTEs, window functions (`RANK`, `ROW_NUMBER`, `SUM OVER`),
-`GROUP BY`/`HAVING`, and `CASE` expressions — including integrity checks that run before I
-trust a result.
-
-**Evidence:** [project 05](05-sql-analytics/), where twelve queries reproduce the Python
-findings exactly. Two independent implementations agreeing is the check.
+Through the Querying Data track with Intel, I learned to retrieve and summarize relational
+data using filtering, aggregation, joins across tables, and grouped analysis. I retain this
+as a documented learning outcome and certification rather than presenting a newly created
+SQL example as one of my original portfolio projects.
 
 ### Choosing metrics that survive the data
 
