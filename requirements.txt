@@ -3,3 +3,4 @@ matplotlib>=3.7
 jupyter>=1.0
 jupytext>=1.16
 ipykernel>=6.0
+nbformat>=5.10

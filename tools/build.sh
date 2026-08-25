@@ -49,6 +49,10 @@ for project in $projects; do
     "$VENV/bin/jupyter" nbconvert --to notebook --execute --inplace \
       --ExecutePreprocessor.kernel_name=gca \
       --ExecutePreprocessor.timeout=600 "$name.ipynb"
+    # Stamp a portable kernelspec. Without it, Jupyter and VS Code prompt for a
+    # kernel when someone opens the notebook, and the "gca" kernel registered
+    # inside this venv does not exist on anyone else's machine.
+    "$VENV/bin/python" "$ROOT/tools/stamp_kernelspec.py" "$name.ipynb"
   )
 done
 
