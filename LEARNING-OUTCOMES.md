@@ -35,9 +35,10 @@ split for The Recording Academy.
 *Using SQL to pull data from large datasets* · March 2026
 
 Relational querying against large datasets: filtering, aggregation, joins across multiple
-tables, and grouped summaries.
+tables, grouped summaries, `CASE` bucketing, and CTEs. Capstone: Intel device
+repurposing — which hardware to collect next if the goal is energy and CO₂, not volume.
 
-**→ Represented by the certification badge and original course credential**
+**→ [Project 05](05-intel-device-repurposing/) · [SQL query log](sql/query-log/)**
 
 </td>
 </tr>
@@ -107,10 +108,14 @@ read rather than decorated.
 
 ### SQL for relational analysis
 
-Through the Querying Data track with Intel, I learned to retrieve and summarize relational
-data using filtering, aggregation, joins across tables, and grouped analysis. I retain this
-as a documented learning outcome and certification rather than presenting a newly created
-SQL example as one of my original portfolio projects.
+I can join tables without dropping the grain I care about, derive columns and buckets,
+lock that grain in a CTE, and slice it with `GROUP BY` / `HAVING` until the mix of the
+data — not just the total — supports a recommendation. The Intel capstone is the
+end-to-end example; the query log is the pattern library behind it, built from queries I
+wrote in the GCA SQL app rather than from tutorial snippets.
+
+**Evidence:** [project 05](05-intel-device-repurposing/) and
+[sql/query-log/](sql/query-log/).
 
 ### Choosing metrics that survive the data
 
@@ -165,7 +170,7 @@ Every project ends in a recommendation a decision-maker could act on, with the r
 visible and the limitations stated. The audience for these projects is a VP or a campaign
 planner, not another analyst.
 
-**Evidence:** the recommendation sections of projects 01 and 04.
+**Evidence:** the recommendation sections of projects 01, 04, and 05.
 
 ---
 

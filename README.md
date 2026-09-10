@@ -1,12 +1,13 @@
 # Data Analytics Portfolio — Maurice Colbert Jr.
 
-Four analytics projects built from my coursework in the **Global Career Accelerator**. Each
-one starts from a business or research question, documents the reasoning behind every
-analytical decision, and ends in a recommendation with its limitations stated.
+Four Python analyses and one SQL analysis built from my coursework in the **Global
+Career Accelerator**. Each one starts from a business or research question, documents
+the reasoning behind every analytical decision, and ends in a recommendation with its
+limitations stated.
 
 **Bowling Green State University** · B.S. Software Engineering, Minor in Information
 Systems · Honors Program
-[LinkedIn](https://www.linkedin.com/) · mauricc@bgsu.edu
+[LinkedIn](https://www.linkedin.com/in/maurice-c-64b14a301) · mauricc@bgsu.edu
 
 <p>
   <img src="assets/badges/python-and-data-grammys.png" width="115" alt="Python & Data certification, with The Recording Academy">
@@ -31,9 +32,12 @@ and **Intercultural Skills** (with UNESCO).
 | [02](02-olympic-medalists/) | **120 years of Olympic medalists** | What story is hiding in 39,783 medal records? | Exploratory analysis, missing-data auditing, data journalism |
 | [03](03-mars-weather/) | **Identifying a planet from its weather** | Which planet produced this rover telemetry? | Data forensics, orbital-cycle detection, multi-signal verification |
 | [04](04-dc-national-parks/) | **DC National Parks campaign targeting** | Where and when should the Park Service promote? | Concentration analysis, seasonality, data-quality triage |
+| [05](05-intel-device-repurposing/) | **Intel device-repurposing strategy** | Which devices should Intel collect next to maximize energy and CO₂ savings? | SQL joins, CTEs, `CASE` buckets, grouped summaries, recommendation |
 
-Every notebook is committed **with its outputs and charts already rendered**, so you can
-read the full analysis on GitHub without running anything.
+Python notebooks are committed **with outputs and charts already rendered**. The SQL
+project is a step-by-step query story with the result charts built from totals I
+recorded in the course SQL app, plus a [query log](sql/query-log/) of the patterns
+behind it.
 
 ---
 
@@ -73,6 +77,13 @@ is almost perfectly flat — so only one of the two demand streams is worth adve
 against. I also flagged rather than reported a site logging 30 visits for the entire year,
 because that is a broken counter, not a finding.
 
+**05 — Intel device repurposing.** 601,740 devices saved 6,768 tons of CO₂, but volume
+and per-device savings move in opposite directions: 7+ year machines save 48 kWh each
+while newer ones dominate intake. I recommended collecting **4–6 year corporate
+laptops** (already 67% of volume, 32 kWh and 0.0140 tons each, 264k devices) and routing
+them toward higher-carbon grids — Asia avoids 0.0155 tons per device against North
+America's 0.0103.
+
 ---
 
 ## What this portfolio demonstrates
@@ -83,8 +94,9 @@ in **[LEARNING-OUTCOMES.md](LEARNING-OUTCOMES.md)**. In brief:
 **Python for data analysis** — pandas for cleaning, reshaping, grouping, joining, and
 aggregating; matplotlib for charts built to be read rather than decorated.
 
-**SQL fundamentals** — filtering, aggregation, joins across tables, and grouped summaries,
-as represented by my Querying Data certification with Intel.
+**SQL** — joins, derived columns, `CASE WHEN` buckets, `WITH` CTEs, `GROUP BY` /
+`HAVING`, and ratio-inside-aggregation, shown in
+[project 05](05-intel-device-repurposing/) and the [SQL query log](sql/query-log/).
 
 **Analytical judgement** — choosing metrics that survive the shape of the data, testing a
 stated hypothesis instead of confirming it, controlling for seasonality, and separating a
@@ -115,17 +127,18 @@ converting month numbers to names, grouped-bar-chart parameters), a second opini
 to handle missing values, and a first draft of one stakeholder memo. In each case I
 verified the output against the data. In the Grammys project the AI-drafted memo confidently
 repeated a premise from my own prompt — that the two audiences differ by age — which my
-demographic analysis had already disproved, so I rewrote it. Each project's notebook ends
-with a **"How I used AI on this project"** section recording exactly what I asked for and
-what I changed.
+demographic analysis had already disproved, so I rewrote it. Each Python project notebook
+and the Intel SQL write-up ends with a **"How I used AI on this project"** section
+recording exactly what I asked for and what I changed.
 
 **AI helped me publish this repository.** After the course I used an AI coding assistant
 (Cursor) to repackage the coursework for GitHub: restructuring the notebooks so the
 reasoning behind each step is explicit rather than reading as answers to assignment
 prompts, replacing course-provided task instructions with my own framing, rebuilding the
-charts, writing this documentation, and setting up the repository. The analytical
-substance, the findings, and the recommendations are unchanged from my own work — the
-packaging and presentation were done with AI assistance.
+charts, writing this documentation, and setting up the repository. The SQL section is the same:
+the queries and findings are from my GCA Google Docs; the GitHub layout follows a
+step-by-step analysis plus a query log. The analytical substance is unchanged from my
+own work — the packaging and presentation were done with AI assistance.
 
 Nothing here is a copied solution. If it matters to you which parts are which, the
 per-project AI notes are specific.
@@ -163,6 +176,8 @@ actual change instead of a wall of JSON.
 ├── 02-olympic-medalists/           Exploratory analysis + data journalism pitch
 ├── 03-mars-weather/                Identifying a planet from telemetry
 ├── 04-dc-national-parks/           Campaign targeting and seasonality
+├── 05-intel-device-repurposing/    SQL analysis: which devices to collect next
+├── sql/query-log/                  SQL patterns from original GCA coursework
 ├── communication/                  Intercultural communication coursework
 ├── assets/badges/                  Certification badges
 ├── LEARNING-OUTCOMES.md            Curriculum and learning outcomes
@@ -170,17 +185,23 @@ actual change instead of a wall of JSON.
 └── requirements.txt
 ```
 
-Each project folder contains a `README.md` (question, method, findings), the executed
-notebook, its jupytext `_src.py` source, `data/`, and `figures/`.
+Python project folders contain a `README.md`, the executed notebook, its jupytext
+`_src.py` source, `data/`, and `figures/`. The SQL project contains the queries, a
+write-up of the findings, and charts of the recorded result totals.
 
 ---
 
 ## Data sources
 
-All datasets were provided as part of the Global Career Accelerator curriculum and are
-included here so the analyses reproduce. They originate from The Recording Academy
-(website and social analytics), a public Olympic medal history dataset (1896–2016), NASA's
-Curiosity rover REMS weather record, and the National Park Service visitation statistics.
+Python project datasets were provided as part of the Global Career Accelerator
+curriculum and are included here so the analyses reproduce. They originate from The
+Recording Academy (website and social analytics), a public Olympic medal history
+dataset (1896–2016), NASA's Curiosity rover REMS weather record, and the National Park
+Service visitation statistics.
+
+The SQL project uses a GCA warehouse designed to reflect Intel's device-repurposing
+program. The course SQL app is not public, so that folder ships the queries I wrote
+and the result totals I recorded, not a copy of the tables.
 
 ## License
 
