@@ -6,6 +6,10 @@
 the data, then pitch a story a general audience would actually read. There was no
 predefined question, so most of the work was deciding which question was worth asking.
 
+The notebook follows the cleaned GCA cycle — **setup → prepare → analyze → insights** —
+with three questions: who dominates the podium, what a 63-year age range actually means,
+and how women's participation changed. The age question is the one that produced the story.
+
 ## Approach
 
 I ran the standard descriptive pass but treated it as **lead generation** rather than the
