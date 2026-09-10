@@ -22,6 +22,3 @@ The full analysis that uses several of these patterns together is
 | [07_cte_with.sql](07_cte_with.sql) | `WITH` CTEs | What share of each region's carbon savings comes from laptops? |
 | [08_ratio_inside_aggregation.sql](08_ratio_inside_aggregation.sql) | `SUM(x) / SUM(y)` | Which bakery products convert production into sales instead of waste? |
 
-Course-provided solution docs are not in this log. Empty SkillBuilder practice
-copies are not either. If a query is here, I wrote it against the GCA SQL app
-and used the result.
