@@ -214,6 +214,7 @@ actual change instead of a wall of JSON.
 ├── 14-terracotta-survey/           SQL: CTE join of survey to plant care
 ├── sql/README.md                   Index of the SQL analyses
 ├── sql/query-log/                  SQL patterns from original GCA coursework
+├── sql/skillbuilders/              SkillBuilder syntax + filled practice drills
 ├── communication/                  Intercultural communication coursework
 ├── assets/badges/                  Certification badges
 ├── LEARNING-OUTCOMES.md            Curriculum and learning outcomes

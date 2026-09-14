@@ -12,6 +12,10 @@ The full write-ups that use these patterns are the SQL projects
 **[05](../../05-intel-device-repurposing/)–[14](../../14-terracotta-survey/)**.
 Intel is the capstone that combines several of them.
 
+To relearn the syntax itself — including the SkillBuilder practice
+boxes that were blank in Google Docs — use
+**[sql/skillbuilders/](../skillbuilders/)**.
+
 | File | Pattern | Question I was answering | Full write-up |
 |---|---|---|---|
 | [01_select_order_by_limit.sql](01_select_order_by_limit.sql) | `SELECT`, `ORDER BY`, `LIMIT` | Which trending videos drew the most comments? | [06](../../06-youtube-trending/) |

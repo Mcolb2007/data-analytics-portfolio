@@ -19,7 +19,10 @@ then deciding **which of those is the ranking**.
 
 Ordered by likes, the top video is **BTS (방탄소년단) 'FAKE LOVE' Official
 MV**. Ordered by comments, the top video is **So Sorry.** Likes and
-comments do not tell the same story.
+comments do not tell the same story. The most-disliked ranking was an
+empty box in the original Doc; [`07_most_disliked.sql`](queries/07_most_disliked.sql)
+fills it with the SkillBuilder 1 `ORDER BY … DESC` pattern. I never
+recorded the video name, so it is not invented here.
 
 ```sql
 SELECT
@@ -68,7 +71,10 @@ to be said about those videos.
 Likes do not follow the same shape. They jump and drop more sharply
 than comments, they decline faster among lower-ranked videos, and the
 most-liked videos are not always the most-commented. Many of the
-high-like, high-view titles were trending music videos.
+high-like, high-view titles were trending music videos. The unused
+LevelUp code for that check is
+[`08_likes_long_tail.sql`](queries/08_likes_long_tail.sql) — the same
+`OFFSET 9 / 99 / 999` ranks as comments, ordered by likes.
 
 ## Recommendation
 
@@ -81,8 +87,9 @@ reaction. Treating "trending" as one metric would mix those two jobs.
 
 - This is a US trending snapshot from Nov 2017–June 2018, not a
   current chart.
-- I did not fill the most-disliked query in the original lab, so this
-  write-up does not invent a dislike ranking.
+- The most-disliked query and the likes long-tail queries were empty
+  in the original Doc; they are filled here from SkillBuilder 1
+  (`ORDER BY`, `OFFSET`) without inventing result names.
 - Ratio of 10th-to-1st comments (0.27) was calculated outside SQL, as
   the assignment required.
 
@@ -97,9 +104,8 @@ into this folder without changing those details.
 ## Skills demonstrated
 
 `SELECT` of an analysis grain · `ORDER BY` as a ranking choice ·
-`LIMIT` · `OFFSET` to pull a specific rank · comparing two metrics
-that do not rank the same way · reading a long tail instead of only
-the top row
+`LIMIT` · `OFFSET` to pull a specific rank · the same long-tail check
+on likes · comparing two metrics that do not rank the same way
 
 ## Data
 

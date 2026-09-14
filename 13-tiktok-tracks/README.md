@@ -55,6 +55,23 @@ The five names I sent to scouting, using top-10 placement, an
 They blew up fast, placed more than once in the top 10, and stayed on
 the chart long enough that people kept listening.
 
+## LevelUp — genres (SkillBuilder 3)
+
+The original LiveLab left the genre boxes empty. SkillBuilder 3 is
+`COUNT` / `AVG` + `GROUP BY`, which is the unused code:
+
+[`07_genre_counts.sql`](queries/07_genre_counts.sql) — which genres
+appear most often.
+
+[`08_genre_avg_posts.sql`](queries/08_genre_avg_posts.sql) — which
+genres have the highest average posts. Frequency and average posts
+are different rankings.
+
+[`09_one_genre.sql`](queries/09_one_genre.sql) — `WHERE genre = …`
+after you read the winner. The file uses `'pop'` as a placeholder;
+swap in whatever 07/08 actually return. I am not inventing a genre
+count I never recorded.
+
 ## Recommendation
 
 1. **Do not sign off volume alone.** The post leader and the #1 with
@@ -68,8 +85,8 @@ the chart long enough that people kept listening.
 
 - TikTok chart extract from the GCA SQL app, not Epic's production
   scouting database.
-- The genre LevelUp queries in the original lab were not filled in,
-  so this write-up does not invent a genre ranking.
+- Genre LevelUp queries were empty in the original Doc; they are
+  filled here from SkillBuilder 3 without inventing which genre won.
 - Artist selection is a scored filter plus judgement, not a model.
 
 ## How I used AI on this project
@@ -85,8 +102,9 @@ without changing those details.
 
 `ORDER BY` on competing metrics · `IS NOT NULL` so missing scores do
 not rank first · tie-break with a second `ORDER BY` · `BETWEEN` ·
-compound `WHERE` (`AND`, `<>`) · defining a scouting band instead of
-taking the top of one list
+compound `WHERE` (`AND`, `<>`) · `GROUP BY` genre (SkillBuilder 3
+LevelUp) · defining a scouting band instead of taking the top of one
+list
 
 ## Data
 

@@ -58,9 +58,23 @@ reason with a handful of mentions as if it were a market.
 
 The original lab also asked for the share of responses that listed
 care requirements, and the share that listed pet-safety, as the
-*reason* for purchase (as opposed to the plant they buy). Those two
-percentage boxes were not filled in the Google Doc, so they are not
-invented here.
+*reason* for purchase. Those boxes were empty.
+[`12_reason_share.sql`](queries/12_reason_share.sql) fills them with
+SkillBuilder 3 `COUNT` and SkillBuilder 4 `ROUND` against the 217
+denominator I did record. Read the two percentages off the output;
+they are not invented here.
+
+## LevelUp — frequency and free text
+
+Empty boxes in the original Doc, filled from SkillBuilders 2 and 3:
+
+[`09_by_frequency.sql`](queries/09_by_frequency.sql) — `GROUP BY freq`.
+[`10_frequency_by_reason.sql`](queries/10_frequency_by_reason.sql) —
+weekly vs once-a-year buyers, same reasons table.
+[`11_pet_safe_free_text.sql`](queries/11_pet_safe_free_text.sql) —
+`ILIKE` for pet / dog / cat / toddler / child / toxic / safe, compared
+to the coded `reason_for_purchase` column. One substring (`pet-friendly`)
+would miss "I love my cat too much," which is the point of the drill.
 
 ## Recommendation
 
@@ -78,9 +92,11 @@ I did record.)
 
 - 217 survey responses, not a customer census.
 - `reason_for_purchase` is a category a senior analyst assigned from
-  free text; I did not recode the free-response column.
-- Frequency × reason (the LevelUp on weekly vs once-a-year buyers)
-  was not completed in the original lab.
+  free text; query 11 is a SkillBuilder 2 recode of the free-response
+  column so I can compare the two.
+- Frequency × reason and the reason-share query were empty in the
+  original Doc; they are filled here from SkillBuilders 2–4 without
+  inventing the resulting counts.
 
 ## How I used AI on this project
 
@@ -93,9 +109,9 @@ packaged the Google Doc into this folder without changing those details.
 ## Skills demonstrated
 
 `LEFT JOIN` on a coded plant type · `WITH` CTE to freeze the join ·
-`GROUP BY` maintenance and toxicity · `HAVING` on a grouped count ·
-subquery to count how many groups clear a threshold · converting
-survey shares into a catalog decision
+`GROUP BY` maintenance, toxicity, and purchase frequency · `HAVING`
+on a grouped count · `ILIKE` recode of free text · converting survey
+shares into a catalog decision
 
 ## Data
 

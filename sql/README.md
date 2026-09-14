@@ -36,3 +36,9 @@ each one actually used.
 **[sql/query-log/](query-log/)** — eight files, each one pattern and one
 question from the SQL track. The full write-up for each of those questions is
 in the project folders above.
+
+## SkillBuilders (relearning)
+
+**[sql/skillbuilders/](skillbuilders/)** — the course syntax recap plus the
+SkillBuilder practice worksheets with the empty query boxes filled in. Open
+a `.sql` file, hide the answer, write your own, then run it in the SQL app.

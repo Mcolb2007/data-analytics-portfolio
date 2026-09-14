@@ -118,8 +118,9 @@ end-to-end example; the other SQL projects each isolate one of those patterns
 `LEFT JOIN`, ratio-inside-aggregation, time buckets, compound scouting filters,
 survey CTE) on the original queries I wrote in the GCA SQL app.
 
-**Evidence:** [projects 05–14](sql/README.md) and
-[sql/query-log/](sql/query-log/).
+**Evidence:** [projects 05–14](sql/README.md),
+[sql/query-log/](sql/query-log/), and the
+[SkillBuilder relearning drills](sql/skillbuilders/).
 
 ### Choosing metrics that survive the data
 
