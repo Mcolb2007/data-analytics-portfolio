@@ -6,10 +6,10 @@ was asked to answer: **which devices should the program prioritize so that the
 next year's collection actually maximizes environmental return?**
 
 The work was done in SQL against two tables — `intel.device_data` and
-`intel.impact_data` — in the Global Career Accelerator's query app. The queries
-in [`queries/`](queries/) are the ones I wrote. The charts below are built from
-the result totals I recorded from those queries, because SQL itself does not
-produce a dashboard.
+`intel.impact_data` — in SQL Pad. The queries in [`queries/`](queries/)
+are the ones I wrote. The charts below are built from the result totals
+I recorded from those queries, because SQL itself does not produce a
+dashboard.
 
 ```
 intel.device_data                    intel.impact_data
@@ -156,7 +156,7 @@ device whose refurbishment cost is high relative to the kWh and CO₂ it avoids.
 ## How I used AI on this project
 
 I wrote the joins, the `CASE` buckets, the CTE, and the `GROUP BY` slices
-myself in the course SQL app. I used ChatGPT in two places, both of which I
+myself in SQL Pad. I used ChatGPT in two places, both of which I
 checked against the query output:
 
 - **Scale comparisons** for 25.74 kWh and 6,768 tons — cars off the road,
@@ -175,5 +175,5 @@ turning query output into a recommendation · documented AI collaboration
 ## Data
 
 GCA Querying Data track, partnered with Intel. Two tables, joined on
-`device_id`. The course SQL app is not public, so this folder ships the queries
+`device_id`. SQL Pad is not a public tool, so this folder ships the queries
 and the result totals I recorded rather than a copy of the warehouse.
