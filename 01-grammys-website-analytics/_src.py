@@ -38,6 +38,7 @@
 
 # %%
 from pathlib import Path
+from typing import List
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -197,7 +198,7 @@ before_after
 # holds seasonality roughly constant and makes the two windows comparable.
 
 # %%
-def feb_to_may(frame: pd.DataFrame, years: list[int]) -> pd.DataFrame:
+def feb_to_may(frame: pd.DataFrame, years: List[int]) -> pd.DataFrame:
     return frame[frame.date.dt.month.between(2, 5) & frame.date.dt.year.isin(years)]
 
 
