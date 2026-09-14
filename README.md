@@ -1,9 +1,11 @@
 # Data Analytics Portfolio — Maurice Colbert Jr.
 
-Four Python analyses and one SQL analysis built from my coursework in the **Global
+Four Python analyses and a SQL track built from my coursework in the **Global
 Career Accelerator**. Each one starts from a business or research question, documents
 the reasoning behind every analytical decision, and ends in a recommendation with its
-limitations stated.
+limitations stated. The SQL projects are the original queries and findings from my
+GCA Google Docs, packaged as portfolio write-ups that highlight the skill each
+analysis actually used.
 
 **Bowling Green State University** · B.S. Software Engineering, Minor in Information
 Systems · Honors Program
@@ -33,11 +35,20 @@ and **Intercultural Skills** (with UNESCO).
 | [03](03-mars-weather/) | **Identifying a planet from its weather** | Which planet produced this rover telemetry? | Data forensics, orbital-cycle detection, multi-signal verification |
 | [04](04-dc-national-parks/) | **DC National Parks campaign targeting** | Where and when should the Park Service promote? | Concentration analysis, seasonality, data-quality triage |
 | [05](05-intel-device-repurposing/) | **Intel device-repurposing strategy** | Which devices should Intel collect next to maximize energy and CO₂ savings? | SQL joins, CTEs, `CASE` buckets, grouped summaries, recommendation |
+| [06](06-youtube-trending/) | **YouTube trending engagement** | What separates a top-commented video from the 1,000th? | `SELECT`, `ORDER BY`, `LIMIT` / `OFFSET`, ranking vs interpreting |
+| [07](07-crunchbase-investments/) | **Crunchbase startup investments** | Are highly funded closed companies a cleantech warning? | `WHERE`, `IS NULL`, `ILIKE`, `AND` / `OR` parentheses |
+| [08](08-london-transit/) | **London Underground ridership** | Why do people ride, and from which zone? | `GROUP BY`, `SUM` vs `COUNT(*)`, origin–destination pairs |
+| [09](09-nba-performance/) | **NBA home-court and three-point shooting** | Does a hot three-point rate win home games? | `HAVING` vs `WHERE`, grouped averages, derived win counts |
+| [10](10-fastkitchen-customers/) | **FastKitchen guest vs registered spend** | How do you profile a customer base that includes guests? | `LEFT JOIN`, `NULL` user_id, zip-level averages |
+| [11](11-too-sweet-bakery/) | **Too Sweet bakery waste** | Which products convert production into sales instead of waste? | Ratio-inside-aggregation, sales efficiency |
+| [12](12-instacart-take-home/) | **Instacart support staffing** | When should support be staffed if night is the peak? | `EXTRACT`, `CASE WHEN` buckets |
+| [13](13-tiktok-tracks/) | **TikTok track scouting** | Which not-yet-#1 tracks look signable? | `BETWEEN`, compound filters, ranking vs volume |
+| [14](14-terracotta-survey/) | **Terracotta online-store pivot** | What should an online plant shop stock and explain? | Join + `WITH` CTE, grouped survey counts, `HAVING` |
 
-Python notebooks are committed **with outputs and charts already rendered**. The SQL
-project is a step-by-step query story with the result charts built from totals I
-recorded in the course SQL app, plus a [query log](sql/query-log/) of the patterns
-behind it.
+Python notebooks are committed **with outputs and charts already rendered**. Each SQL
+project is a step-by-step query story from the original GCA Google Doc — same
+queries, same recorded totals — plus a [query log](sql/query-log/) of the patterns
+behind them. The Intel capstone also has charts built from those recorded totals.
 
 ---
 
@@ -84,6 +95,19 @@ laptops** (already 67% of volume, 32 kWh and 0.0140 tons each, 264k devices) and
 them toward higher-carbon grids — Asia avoids 0.0155 tons per device against North
 America's 0.0103.
 
+**06–14 — SQL milestones and LiveLabs.** Comment counts on YouTube trending videos
+fall from 371,864 at rank 10 to 7,155 at rank 1,000, and likes do not rank the same
+titles. Six of the twelve most-funded *closed* Crunchbase companies are cleantech, but
+cleantech's closed rate (7.0%) is slightly *below* the table (7.9%). The Tube moves
+4.88 million journeys on a typical weekday, 51.7% from Zone 1, with Home → Work as
+the top pair and tourism on a midday clock. Since 2018, 25 NBA team-seasons shot 37%
+or better from three at home and only 2 of them still lost. FastKitchen guests place
+more orders than registered users; only 3 zips beat guest average ticket. Too Sweet
+wastes 3–13% of what it bakes every day — croissants sell through, the pastry special
+does not. Instacart orders peak at **night**. TikTok's post leader (36.5M) is not the
+#1 with the fewest posts (BTS *GO GO*, 450k). Terracotta survey respondents already
+buy low-maintenance (79%) and pet-safe (99%) plants.
+
 ---
 
 ## What this portfolio demonstrates
@@ -95,8 +119,8 @@ in **[LEARNING-OUTCOMES.md](LEARNING-OUTCOMES.md)**. In brief:
 aggregating; matplotlib for charts built to be read rather than decorated.
 
 **SQL** — joins, derived columns, `CASE WHEN` buckets, `WITH` CTEs, `GROUP BY` /
-`HAVING`, and ratio-inside-aggregation, shown in
-[project 05](05-intel-device-repurposing/) and the [SQL query log](sql/query-log/).
+`HAVING`, `ILIKE`, `EXTRACT`, and ratio-inside-aggregation, shown across
+[projects 05–14](sql/README.md) and the [SQL query log](sql/query-log/).
 
 **Analytical judgement** — choosing metrics that survive the shape of the data, testing a
 stated hypothesis instead of confirming it, controlling for seasonality, and separating a
@@ -137,8 +161,10 @@ reasoning behind each step is explicit rather than reading as answers to assignm
 prompts, replacing course-provided task instructions with my own framing, rebuilding the
 charts, writing this documentation, and setting up the repository. The SQL section is the same:
 the queries and findings are from my GCA Google Docs; the GitHub layout follows a
-step-by-step analysis plus a query log. The analytical substance is unchanged from my
-own work — the packaging and presentation were done with AI assistance.
+step-by-step analysis plus a query log. Projects 06–14 are that same packaging for
+the SQL milestones and LiveLabs — original details unchanged, skills called out.
+The analytical substance is unchanged from my own work — the packaging and
+presentation were done with AI assistance.
 
 Nothing here is a copied solution. If it matters to you which parts are which, the
 per-project AI notes are specific.
@@ -176,7 +202,17 @@ actual change instead of a wall of JSON.
 ├── 02-olympic-medalists/           Exploratory analysis + data journalism pitch
 ├── 03-mars-weather/                Identifying a planet from telemetry
 ├── 04-dc-national-parks/           Campaign targeting and seasonality
-├── 05-intel-device-repurposing/    SQL analysis: which devices to collect next
+├── 05-intel-device-repurposing/    SQL capstone: which devices to collect next
+├── 06-youtube-trending/            SQL: ranking engagement with LIMIT / OFFSET
+├── 07-crunchbase-investments/      SQL: NULL-safe filters and ILIKE
+├── 08-london-transit/              SQL: GROUP BY ridership volume
+├── 09-nba-performance/             SQL: HAVING vs WHERE on team-seasons
+├── 10-fastkitchen-customers/       SQL: LEFT JOIN guests into the profile
+├── 11-too-sweet-bakery/            SQL: waste as SUM/SUM, not leftover counts
+├── 12-instacart-take-home/         SQL: EXTRACT + CASE WHEN staffing windows
+├── 13-tiktok-tracks/               SQL: compound filters for scouting
+├── 14-terracotta-survey/           SQL: CTE join of survey to plant care
+├── sql/README.md                   Index of the SQL analyses
 ├── sql/query-log/                  SQL patterns from original GCA coursework
 ├── communication/                  Intercultural communication coursework
 ├── assets/badges/                  Certification badges
@@ -186,8 +222,9 @@ actual change instead of a wall of JSON.
 ```
 
 Python project folders contain a `README.md`, the executed notebook, its jupytext
-`_src.py` source, `data/`, and `figures/`. The SQL project contains the queries, a
-write-up of the findings, and charts of the recorded result totals.
+`_src.py` source, `data/`, and `figures/`. Each SQL project contains the queries I
+wrote and a write-up of the findings I recorded. The Intel capstone also has charts
+of those recorded result totals.
 
 ---
 
@@ -199,9 +236,10 @@ Recording Academy (website and social analytics), a public Olympic medal history
 dataset (1896–2016), NASA's Curiosity rover REMS weather record, and the National Park
 Service visitation statistics.
 
-The SQL project uses a GCA warehouse designed to reflect Intel's device-repurposing
-program. The course SQL app is not public, so that folder ships the queries I wrote
-and the result totals I recorded, not a copy of the tables.
+The SQL projects use the GCA warehouse (YouTube trending, Crunchbase, TfL RODS, NBA
+games, FastKitchen, Too Sweet, Instacart, TikTok tracks, Terracotta survey, and the
+Intel device-repurposing tables). The course SQL app is not public, so those folders
+ship the queries I wrote and the result totals I recorded, not a copy of the tables.
 
 ## License
 

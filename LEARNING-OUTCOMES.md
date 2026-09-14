@@ -37,8 +37,10 @@ split for The Recording Academy.
 Relational querying against large datasets: filtering, aggregation, joins across multiple
 tables, grouped summaries, `CASE` bucketing, and CTEs. Capstone: Intel device
 repurposing — which hardware to collect next if the goal is energy and CO₂, not volume.
+Milestones and LiveLabs on YouTube trending, Crunchbase, TfL, NBA, FastKitchen, Too
+Sweet, Instacart, TikTok, and Terracotta.
 
-**→ [Project 05](05-intel-device-repurposing/) · [SQL query log](sql/query-log/)**
+**→ [Projects 05–14](sql/README.md) · [SQL query log](sql/query-log/)**
 
 </td>
 </tr>
@@ -111,10 +113,12 @@ read rather than decorated.
 I can join tables without dropping the grain I care about, derive columns and buckets,
 lock that grain in a CTE, and slice it with `GROUP BY` / `HAVING` until the mix of the
 data — not just the total — supports a recommendation. The Intel capstone is the
-end-to-end example; the query log is the pattern library behind it, built from queries I
-wrote in the GCA SQL app rather than from tutorial snippets.
+end-to-end example; the other SQL projects each isolate one of those patterns
+(ranking, NULL-safe filters, origin–destination pairs, `HAVING` vs `WHERE`, guest
+`LEFT JOIN`, ratio-inside-aggregation, time buckets, compound scouting filters,
+survey CTE) on the original queries I wrote in the GCA SQL app.
 
-**Evidence:** [project 05](05-intel-device-repurposing/) and
+**Evidence:** [projects 05–14](sql/README.md) and
 [sql/query-log/](sql/query-log/).
 
 ### Choosing metrics that survive the data
@@ -170,7 +174,7 @@ Every project ends in a recommendation a decision-maker could act on, with the r
 visible and the limitations stated. The audience for these projects is a VP or a campaign
 planner, not another analyst.
 
-**Evidence:** the recommendation sections of projects 01, 04, and 05.
+**Evidence:** the recommendation sections of projects 01, 04, 05, 08, 11, and 13.
 
 ---
 
