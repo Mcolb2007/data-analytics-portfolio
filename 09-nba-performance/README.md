@@ -6,7 +6,7 @@ shooting is actually tied to winning. The table is `nba.games` —
 **23,335** games from the **2004** season through **2020**.
 
 The queries in [`queries/`](queries/) are the ones I wrote. Row counts
-and rates below are what I recorded from the course SQL app.
+and rates below are what I recorded from SQL Pad.
 
 ## Home-court is real. It is also shrinking.
 
@@ -89,7 +89,7 @@ flag. That is the kind of grain you build before a join, not after.
 
 ## Limitations
 
-- Team-season counts (25 / 2 / 7) were read from the SQL app row
+- Team-season counts (25 / 2 / 7) were read from SQL Pad's row
   count, not returned as a `COUNT` in the query.
 - Home-court decline is a seasonal trend, not a causal model. Travel
   and recovery is one explanation, not a measured one.
@@ -113,6 +113,6 @@ separates winners from losers
 
 ## Data
 
-GCA Querying Data track. Table: `nba.games`, 2004–2020. The course
-SQL app is not public, so this folder ships the queries and the
-result totals I recorded rather than a copy of the table.
+GCA Querying Data track. Table: `nba.games`, 2004–2020. SQL Pad is not
+a public tool, so this folder ships the queries and the result totals
+I recorded rather than a copy of the table.

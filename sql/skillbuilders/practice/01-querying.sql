@@ -1,7 +1,7 @@
 -- SkillBuilder 1 Practice — SELECT, FROM, ORDER BY, LIMIT, OFFSET
 -- Original Doc: https://docs.google.com/document/d/1CBfEHR3GIiZwnaFlw2BfWo849LL_Ry1wX8cZwRwwVrQ
 -- These fill the empty "Paste your query here" boxes. Result counts
--- were never recorded in that Doc — read them from the SQL app.
+-- were never recorded in that Doc — read them from SQL Pad.
 
 -- =============================================================================
 -- SELECT & FROM  |  sales_data.cars
@@ -12,7 +12,7 @@ SELECT *
 FROM sales_data.cars;
 
 -- 2. How many sales are in the table?
---    Read the row count from the SQL app information bar, or:
+--    Read the row count from SQL Pad's information bar, or:
 SELECT COUNT(*) AS n_sales
 FROM sales_data.cars;
 
@@ -41,7 +41,7 @@ FROM nba.players
 ORDER BY age DESC;
 
 -- 2. Who was the oldest player? First row of the query above.
---    Recorded result: run in the SQL app (not in the original Doc).
+--    Recorded result: run in SQL Pad (not in the original Doc).
 
 -- 3. Is the player with the most three-point attempts the same as
 --    the points-per-game leader?
@@ -78,7 +78,7 @@ FROM spotify.tracks
 LIMIT 100;
 
 -- 2. Last row of that output should be Armin Van Buuren.
---    Energy rating: read from the SQL app (not in the original Doc).
+--    Energy rating: read from SQL Pad (not in the original Doc).
 
 -- 3. 100 rows after skipping the first 1,000. Which artist dominates?
 SELECT

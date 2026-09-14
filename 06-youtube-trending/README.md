@@ -5,7 +5,7 @@ trending videos** (`youtube.trending`, November 2017–June 2018): how
 views, likes, and comments relate to a video's chance of trending, and
 what a client should actually optimize for.
 
-The work was done in SQL in the Global Career Accelerator's query app.
+The work was done in SQL Pad.
 The queries in [`queries/`](queries/) are the ones I wrote. Rankings
 below are the result totals I recorded from those queries.
 
@@ -95,8 +95,8 @@ reaction. Treating "trending" as one metric would mix those two jobs.
 
 ## How I used AI on this project
 
-I wrote the ranking queries and recorded the comment counts myself in the
-course SQL app. The original lab included a ChatGPT prompt about why a
+I wrote the ranking queries and recorded the comment counts myself in
+SQL Pad. The original lab included a ChatGPT prompt about why a
 heavily disliked video might also draw comments; the interpretation of
 the 10 / 100 / 1,000 drop-off is mine. Cursor packaged the Google Doc
 into this folder without changing those details.
@@ -109,6 +109,6 @@ on likes · comparing two metrics that do not rank the same way
 
 ## Data
 
-GCA Querying Data track. Table: `youtube.trending`. The course SQL app
-is not public, so this folder ships the queries and the result totals
+GCA Querying Data track. Table: `youtube.trending`. SQL Pad is not a
+public tool, so this folder ships the queries and the result totals
 I recorded rather than a copy of the table.

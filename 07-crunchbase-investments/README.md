@@ -5,8 +5,8 @@ A venture firm wanted a first pass on Crunchbase company data
 most, who raised a lot and still closed, and whether one industry is
 over-represented in that second list.
 
-The queries in [`queries/`](queries/) are the ones I wrote in the
-course SQL app. The totals below are what I recorded from them.
+The queries in [`queries/`](queries/) are the ones I wrote in SQL Pad.
+The totals below are what I recorded from them.
 
 ## NULL funding is not zero funding
 
@@ -102,6 +102,6 @@ the expensive-failure list" from "fails more often"
 
 ## Data
 
-GCA Querying Data track. Table: `crunchbase.companies`. The course SQL
-app is not public, so this folder ships the queries and the result
-totals I recorded rather than a copy of the table.
+GCA Querying Data track. Table: `crunchbase.companies`. SQL Pad is not
+a public tool, so this folder ships the queries and the result totals
+I recorded rather than a copy of the table.

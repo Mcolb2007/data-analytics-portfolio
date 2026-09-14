@@ -8,9 +8,9 @@ That split follows [Matt Mike's guidance on adding SQL to a data
 portfolio](https://thdatapoint.substack.com/p/how-to-add-sql-to-your-data-portfolio):
 a step-by-step analysis with the queries and the findings in one place, plus a
 GitHub query log of example problems and syntax. I do not have a Tableau or
-Power BI dashboard from this coursework — the execution environment was the
-course SQL app — so each write-up uses the result totals I recorded from those
-queries. The Intel capstone also has charts of those totals.
+Power BI dashboard from this coursework — the software I used to write and run
+the queries was **SQL Pad** — so each write-up uses the result totals I recorded
+from those queries. The Intel capstone also has charts of those totals.
 
 Every analysis below is from my original GCA Google Docs. The queries, recorded
 numbers, and conclusions are unchanged. The GitHub folders highlight the skill
@@ -41,4 +41,4 @@ in the project folders above.
 
 **[sql/skillbuilders/](skillbuilders/)** — the course syntax recap plus the
 SkillBuilder practice worksheets with the empty query boxes filled in. Open
-a `.sql` file, hide the answer, write your own, then run it in the SQL app.
+a `.sql` file, hide the answer, write your own, then run it in SQL Pad.

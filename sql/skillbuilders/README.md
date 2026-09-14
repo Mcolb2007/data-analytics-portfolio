@@ -6,7 +6,7 @@ The GCA SkillBuilder Google Docs were mostly blank copies (`Paste your
 query here`). I filled those unused blocks here using the course
 [SkillBuilder Summary](https://docs.google.com/document/d/1-AVfaOpDX298p3hihikl7K5NjavOhnDsvJtSz-yzYrU)
 examples, so I can reopen a drill without hunting Drive. Run any query
-in the [GCA SQL app](https://sql.hq.globaltech.org/queries/new).
+in [SQL Pad](https://sql.hq.globaltech.org/queries/new).
 
 | File | What it is | Original Doc |
 |---|---|---|
@@ -22,7 +22,7 @@ in the [GCA SQL app](https://sql.hq.globaltech.org/queries/new).
 
 1. Open the `.sql` file for the skill that is rusty.
 2. Read the prompt in the comment, hide the query, write your own.
-3. Compare, then run it in the SQL app.
+3. Compare, then run it in SQL Pad.
 4. Jump to the **portfolio project** that uses the same pattern for
    real:
 
@@ -38,9 +38,9 @@ in the [GCA SQL app](https://sql.hq.globaltech.org/queries/new).
 ## What is filled vs recorded
 
 - **Queries** in this folder fill the empty SkillBuilder boxes. Column
-  names follow the prompts; if the SQL app errors, preview the table
+  names follow the prompts; if SQL Pad returns an error, preview the table
   and adjust.
 - **Result numbers** are only included where the course published
   them (SkillBuilder 4 official solutions). Everything else says
-  "read from the SQL app" — I am not inventing row counts I never
+  "read from SQL Pad" — I am not inventing row counts I never
   recorded.

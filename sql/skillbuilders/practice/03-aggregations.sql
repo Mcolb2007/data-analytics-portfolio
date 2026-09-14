@@ -1,6 +1,6 @@
 -- SkillBuilder 3 Practice — COUNT, SUM, MIN/MAX, AVG, GROUP BY, AS
 -- Original Doc: https://docs.google.com/document/d/1QqUoolccaO2ZbKNAmnBX3Mn9YyJJpmYCiKJjQ0lL-8w
--- Empty boxes filled. Row counts: read from the SQL app.
+-- Empty boxes filled. Row counts: read from SQL Pad.
 
 -- =============================================================================
 -- Aggregations
@@ -74,7 +74,7 @@ GROUP BY city
 ORDER BY avg_price DESC;
 
 -- 2. Add average reviews. Do high-review cities cost more or less?
---    (Use the SQL app chart creator for the scatter if you want.)
+--    (Use SQL Pad's chart creator for the scatter if you want.)
 SELECT
     city,
     AVG(price) AS avg_price,

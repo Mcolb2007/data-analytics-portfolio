@@ -6,7 +6,7 @@ central London. The table is `tfl.rods` — 6,295 rows from the Rolling
 Origin and Destination Survey, modelled as a typical November weekday.
 
 The queries in [`queries/`](queries/) are the ones I wrote. The totals
-below are what I recorded from the course SQL app.
+below are what I recorded from SQL Pad.
 
 ## Each row is a profile, not a trip
 
@@ -94,6 +94,6 @@ aggregating · reading a pair (Home → Work) instead of a single label
 ## Data
 
 GCA Querying Data track, Transport for London RODS extract. Table:
-`tfl.rods`. The course SQL app is not public, so this folder ships
+`tfl.rods`. SQL Pad is not a public tool, so this folder ships
 the queries and the result totals I recorded rather than a copy of
 the table.

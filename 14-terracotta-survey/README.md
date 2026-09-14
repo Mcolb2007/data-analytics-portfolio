@@ -7,7 +7,7 @@ read. Two tables: `terracotta.survey` and `terracotta.plant_info`
 (light, water, maintenance, toxicity).
 
 The queries in [`queries/`](queries/) are the ones I wrote. Counts
-and percentages below are what I recorded from the course SQL app.
+and percentages below are what I recorded from SQL Pad.
 
 ## Join the plant to the survey, then freeze that grain
 
@@ -116,6 +116,6 @@ shares into a catalog decision
 ## Data
 
 GCA Querying Data track, LiveLab. Tables: `terracotta.survey`,
-`terracotta.plant_info`. The course SQL app is not public, so this
+`terracotta.plant_info`. SQL Pad is not a public tool, so this
 folder ships the queries and the result totals I recorded rather
 than a copy of the warehouse.

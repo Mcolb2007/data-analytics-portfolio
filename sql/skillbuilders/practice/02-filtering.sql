@@ -1,6 +1,6 @@
 -- SkillBuilder 2 Practice — WHERE, BETWEEN, IN, LIKE/ILIKE, NULL, AND/OR/NOT
 -- Original Doc: https://docs.google.com/document/d/1iNVkKQqVyexJl0eB-40Y1O5XR4oBcyTHKEUL0OS2nPg
--- Empty boxes filled. Row counts: read from the SQL app.
+-- Empty boxes filled. Row counts: read from SQL Pad.
 
 -- =============================================================================
 -- WHERE  |  sales_data.cars  (~2,500 California listings)

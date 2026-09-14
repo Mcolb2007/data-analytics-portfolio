@@ -58,7 +58,7 @@ def savings_by_age() -> None:
     fig.text(
         0.5,
         -0.04,
-        "Source: queries/06_by_age_bucket.sql · recorded from GCA SQL app. "
+        "Source: queries/06_by_age_bucket.sql · recorded from SQL Pad. "
         "Newer devices are the largest share of volume and the lowest per-unit savings.",
         ha="center",
         fontsize=8,

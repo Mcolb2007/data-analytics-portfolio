@@ -1,5 +1,5 @@
 -- How large is the cleantech category in this table?
--- Row count from the SQL app information bar is the denominator
+-- Row count from SQL Pad's information bar is the denominator
 -- for the closed-rate comparison in 04.
 
 SELECT

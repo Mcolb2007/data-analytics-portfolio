@@ -5,8 +5,7 @@ Three months of production data live in `too_sweet.data`: category,
 product, ratings, comments, quantity produced / sold / wasted.
 
 The queries in [`queries/`](queries/) are the ones I wrote. The
-percentages and product names below are what I recorded from the
-course SQL app.
+percentages and product names below are what I recorded from SQL Pad.
 
 ## Waste is a ratio, not a leftover count
 
@@ -95,6 +94,6 @@ with an operations metric so "most loved" is not automatically
 
 ## Data
 
-GCA Querying Data track, LiveLab. Table: `too_sweet.data`. The course
-SQL app is not public, so this folder ships the queries and the
-result totals I recorded rather than a copy of the table.
+GCA Querying Data track, LiveLab. Table: `too_sweet.data`. SQL Pad is
+not a public tool, so this folder ships the queries and the result
+totals I recorded rather than a copy of the table.

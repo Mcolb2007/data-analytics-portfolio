@@ -5,8 +5,8 @@ interview: look at `instacart.data` (orders, location, ratings,
 reported issues) and answer two open questions — what do you notice
 about the business, and how would you staff Customer Support?
 
-The queries in [`queries/`](queries/) are the ones I wrote in the
-course SQL app. The staffing call below is the finding I recorded:
+The queries in [`queries/`](queries/) are the ones I wrote in SQL Pad.
+The staffing call below is the finding I recorded:
 **Night has the most orders.**
 
 ## Timestamps are too sharp to staff against
@@ -49,7 +49,7 @@ ranks the same types by **average customer rating**, lowest first.
 
 Staffing against the most common issue alone would miss the issue
 that hurts the score. I did not record the issue-type names and
-counts from the SQL app into the original lab write-up, so they are
+counts from SQL Pad into the original lab write-up, so they are
 not invented here — the queries are the work product.
 
 ## Recommendation
@@ -91,5 +91,5 @@ query
 ## Data
 
 GCA Querying Data track, LiveLab take-home. Table: `instacart.data`.
-The course SQL app is not public, so this folder ships the queries
+SQL Pad is not a public tool, so this folder ships the queries
 and the finding I recorded rather than a copy of the table.

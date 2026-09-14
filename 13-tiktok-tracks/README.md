@@ -7,7 +7,7 @@ explicit flag, genre, and `epic_score` (0–1, Epic's internal chart
 velocity).
 
 The queries in [`queries/`](queries/) are the ones I wrote. Counts
-and names below are what I recorded from the course SQL app.
+and names below are what I recorded from SQL Pad.
 
 ## Posts, velocity, and peak rank do not pick the same song
 
@@ -83,7 +83,7 @@ count I never recorded.
 
 ## Limitations
 
-- TikTok chart extract from the GCA SQL app, not Epic's production
+- TikTok chart extract from SQL Pad, not Epic's production
   scouting database.
 - Genre LevelUp queries were empty in the original Doc; they are
   filled here from SkillBuilder 3 without inventing which genre won.
@@ -108,6 +108,6 @@ list
 
 ## Data
 
-GCA Querying Data track, LiveLab. Table: `tiktok.tracks`. The course
-SQL app is not public, so this folder ships the queries and the
-result totals I recorded rather than a copy of the table.
+GCA Querying Data track, LiveLab. Table: `tiktok.tracks`. SQL Pad is
+not a public tool, so this folder ships the queries and the result
+totals I recorded rather than a copy of the table.

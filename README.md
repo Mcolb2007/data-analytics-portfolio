@@ -3,9 +3,9 @@
 Four Python analyses and a SQL track built from my coursework in the **Global
 Career Accelerator**. Each one starts from a business or research question, documents
 the reasoning behind every analytical decision, and ends in a recommendation with its
-limitations stated. The SQL projects are the original queries and findings from my
-GCA Google Docs, packaged as portfolio write-ups that highlight the skill each
-analysis actually used.
+limitations stated. The SQL projects are the original queries I wrote in **SQL Pad** and the
+findings from my GCA Google Docs, packaged as portfolio write-ups that highlight
+the skill each analysis actually used.
 
 **Bowling Green State University** · B.S. Software Engineering, Minor in Information
 Systems · Honors Program
@@ -47,7 +47,7 @@ and **Intercultural Skills** (with UNESCO).
 
 Python notebooks are committed **with outputs and charts already rendered**. Each SQL
 project is a step-by-step query story from the original GCA Google Doc — same
-queries, same recorded totals — plus a [query log](sql/query-log/) of the patterns
+SQL Pad queries, same recorded totals — plus a [query log](sql/query-log/) of the patterns
 behind them. The Intel capstone also has charts built from those recorded totals.
 
 ---
@@ -239,8 +239,9 @@ Service visitation statistics.
 
 The SQL projects use the GCA warehouse (YouTube trending, Crunchbase, TfL RODS, NBA
 games, FastKitchen, Too Sweet, Instacart, TikTok tracks, Terracotta survey, and the
-Intel device-repurposing tables). The course SQL app is not public, so those folders
-ship the queries I wrote and the result totals I recorded, not a copy of the tables.
+Intel device-repurposing tables). I wrote and ran every query in **SQL Pad**.
+SQL Pad is not a public tool, so those folders ship the queries I wrote and the
+result totals I recorded, not a copy of the tables.
 
 ## License
 

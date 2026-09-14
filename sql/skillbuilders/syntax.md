@@ -3,8 +3,8 @@
 Copied from the GCA **SkillBuilder Summary** so I can relearn without
 opening Drive. Examples use the course warehouse tables.
 
-Pro tip from the original Doc: run these in the
-[SQL app](https://sql.hq.globaltech.org/queries/new) and look at the
+Pro tip from the original Doc: run these in
+[SQL Pad](https://sql.hq.globaltech.org/queries/new) and look at the
 output, not just the syntax.
 
 ## SkillBuilder 1 — Querying

@@ -116,7 +116,7 @@ data — not just the total — supports a recommendation. The Intel capstone is
 end-to-end example; the other SQL projects each isolate one of those patterns
 (ranking, NULL-safe filters, origin–destination pairs, `HAVING` vs `WHERE`, guest
 `LEFT JOIN`, ratio-inside-aggregation, time buckets, compound scouting filters,
-survey CTE) on the original queries I wrote in the GCA SQL app.
+survey CTE) on the original queries I wrote in SQL Pad.
 
 **Evidence:** [projects 05–14](sql/README.md),
 [sql/query-log/](sql/query-log/), and the

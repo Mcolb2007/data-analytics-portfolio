@@ -8,7 +8,7 @@ loyalty program instead of the business.
 
 Two tables: `fastkitchen.orders` and `fastkitchen.users`. The queries
 in [`queries/`](queries/) are the ones I wrote. Totals below are what
-I recorded from the course SQL app.
+I recorded from SQL Pad.
 
 ## Guests are the larger group
 
@@ -97,6 +97,6 @@ average order value at zip grain
 ## Data
 
 GCA Querying Data track. Tables: `fastkitchen.orders`,
-`fastkitchen.users`. The course SQL app is not public, so this folder
+`fastkitchen.users`. SQL Pad is not a public tool, so this folder
 ships the queries and the result totals I recorded rather than a
 copy of the warehouse.
